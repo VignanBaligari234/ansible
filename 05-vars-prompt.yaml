@@ -14,4 +14,4 @@
       msg: "Username is: {{USERNAME}}"
   - name: print the password from prompt
     ansible.builtin.debug:
-      msg: "Username is: {{PASSWORD}}"
+      msg: "password is: {{PASSWORD}}"
