@@ -20,12 +20,9 @@
     ansible.builtin.user:
       name: "{{USER}}"
     when: output.rc != 0
-  - name: take output of created user
-    ansible.builtin.command: id {{USER}}
-    register: createduser
   - name: print created user
     ansible.builtin.debug:
-      msg: "{{createduser}} is created" 
+      msg: "{{USER}} is created" 
 
 
 
