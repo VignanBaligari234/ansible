@@ -1,0 +1,14 @@
+- name: create dynamic user
+  hosts: localhosts
+  vars_prompt:
+  - name: USER
+    prompt: please enter the user
+    private: false 
+  tasks:
+  - name: check if the user exists or not
+    ansible.builtin.command: id {{USER}}
+    register: output
+  - name: print the output
+    ansible.builtin.debug:
+      msg: "output is {{output}}" 
+  
