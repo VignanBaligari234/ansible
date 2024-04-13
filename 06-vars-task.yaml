@@ -6,10 +6,10 @@
   tasks:
   - name: print the variables at play level
     ansible.builtin.debug:
-      msg: "I have {{MONEY}} and Land of {{LAND}}"
+      msg: "MONEY: {{MONEY}} and Land of {{LAND}}"
   - name: print the variables at task level and override the play level variables
     vars:
     - MONEY: "200000rs"
     - HOUSES: "2 houses"
     ansible.builtin.debug:
-      msg: "MONENEY: {{MONEY}} Houses: {{HOUSES}}"
+      msg: "MONEY: {{MONEY}} Houses: {{HOUSES}}"
