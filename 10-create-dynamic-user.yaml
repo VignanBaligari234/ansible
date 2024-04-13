@@ -15,5 +15,13 @@
   - name: print the exit status
     ansible.builtin.debug:
       msg: "exit status is {{output.rc}}"
+  - name: create user if not exits
+    become: yes
+    ansible.builtin.user:
+      name: "{{USER}}"
+    when: output.rc != 0
+
+
+
     
   
