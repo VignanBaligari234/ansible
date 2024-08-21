@@ -1,5 +1,5 @@
 [mongodb]
-roboshop-us-dev-db-mongodb-01.vignanspace.online
+roboshop-us-dev-db-mongodb-01.vignanlabs.online
 
 [mongodb:vars]
 MONGO_USERNAME=mongoadmin
