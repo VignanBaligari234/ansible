@@ -1,6 +1,4 @@
 [web]
 roboshop-us-dev-web-01.vignanlabs.online
 
-[mongodb:vars]
-MONGO_USERNAME=mongoadmin
-MONGO_DB=categories
+
