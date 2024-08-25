@@ -1,4 +1,4 @@
-[mongodb]
+[web]
 roboshop-us-dev-db-mongodb-01.vignanlabs.online
 
 [mongodb:vars]
